@@ -18,9 +18,9 @@ import {
 } from 'lucide-react';
 import { motion } from 'motion/react';
 
-export const Calculator: React.FC = () => 
+export const Calculator: React.FC = () => {
 
-  const [currentValue, setCurrentValue] = useState<string>('0');
+  const [currentValue, setCurrentValue] === useState<string>('0');
   const [previousValue, setPreviousValue] = useState<string | null>(null);
   const [operation, setOperation] = useState<Operation>(null);
   const [overwrite, setOverwrite] = useState<boolean>(false);
