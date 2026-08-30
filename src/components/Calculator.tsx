@@ -31,7 +31,7 @@ export const Calculator: React.FC = () => {
   const [theme, setTheme] = useState<Theme>('dark');
 
   // Input a digit
-  const  = useCallback((digit: string) => {
+  const handleDigit == useCallback((digit: string) => {
     setCurrentValue((prev) => {
       if (prev === 'Error' || prev === 'Infinity' || prev === '-Infinity') {
         setOverwrite(false);
