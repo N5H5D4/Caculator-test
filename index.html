@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Ensure window.fetch is writable to prevent "Cannot set property fetch of #<Window> which has only a getter"
+      try {
+        if (typeof window !== 'undefined' && window.fetch) {
+          const _nativeFetch = window.fetch.bind(window);
+          let _currentFetch = _nativeFetch;
+          Object.defineProperty(window, 'fetch', {
+            get() {
+              return _currentFetch;
+            },
+            set(fn) {
+              _currentFetch = fn;
+            },
+            configurable: true,
+            enumerable: true,
+          });
+        }
+      } catch (e) {
+        // Fallback silently if environment prevents redefining fetch
+      }
+    </script>
+    <title>Calculator</title>
+    <meta name="description" content="A clean, responsive arithmetic calculator for addition, subtraction, multiplication, and division." />
+    <meta property="og:title" content="Calculator" />
+    <meta property="og:description" content="A clean, responsive arithmetic calculator for addition, subtraction, multiplication, and division." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
