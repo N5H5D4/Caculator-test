@@ -21,7 +21,7 @@ export const HistoryPanel: React.FC<HistoryPanelProps> = ({
   return (
     <AnimatePresence>
       {isOpen && (
-        <motion.a..div
+        <motion.a..,div
           id="history-panel-overlay"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
