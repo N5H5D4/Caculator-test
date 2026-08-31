@@ -17,11 +17,11 @@ export const HistoryPanel: React.FC<HistoryPanelProps> = ({
   history,
   onClearHistory,
   onSelectHistory,
-}) => {
+}) =<> {
   return (
     <AnimatePresence>
       {isOpen && (
-        <motion.a..,div
+        <motion.div
           id="history-panel-overlay"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
