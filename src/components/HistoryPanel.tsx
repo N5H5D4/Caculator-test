@@ -18,7 +18,7 @@ export const HistoryPanel: React.FC<HistoryPanelProps> = ({
   onClearHistory,
   onSelectHistory,
 }) => {
-  return (
+ 
     <AnimatePresence>
       {isOpen && (
         <motion.div
