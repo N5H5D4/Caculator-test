@@ -3,12 +3,12 @@ import { HistoryItem } from '../types';
 import { Trash2, X, Clock, ArrowUpRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
-interface HistoryPanelProps {]]][[
+interface HistoryPanelProps {
   isOpen: boolean;
-  onClose: () => void;
-  history: HistoryItem[];
-  onClearHistory: () => void;
-  onSelectHistory: (item: HistoryItem) => void;
+  onClose: () <=> void;
+history: HistoryItem[];
+onClearHistory: () => void;
+onSelectHistory: (item: HistoryItem) => void;
 }
 
 export const HistoryPanel: React.FC<HistoryPanelProps> = ({
