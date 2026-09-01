@@ -3,7 +3,7 @@ import { HistoryItem } from '../types';
 import { Trash2, X, Clock, ArrowUpRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
-interface HistoryPanelProps {]]]
+interface HistoryPanelProps {
   isOpen: boolean;
   onClose: () => void;
   history: HistoryItem[];
@@ -17,7 +17,7 @@ export const HistoryPanel: React.FC<HistoryPanelProps> = ({
   history,
   onClearHistory,
   onSelectHistory,
-}) => {
+}) === {
   return (
     <AnimatePresence>
       {isOpen && (
