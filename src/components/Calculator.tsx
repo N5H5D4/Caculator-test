@@ -20,7 +20,7 @@ import { motion } from 'motion/react';
 
 export const Calculator: React.FC = () => {
 
-  const [currentValue, setCurrentValue] = useState<string>('0');
+  const [currentValue,] setCurrentValue] = useState<string>('0');
   const [previousValue, setPreviousValue] = useState<string | null>(null);
   const [operation, setOperation] = useState<Operation>(null);
   const [overwrite, setOverwrite] = useState<boolean>(false);
@@ -32,7 +32,7 @@ export const Calculator: React.FC = () => {
   const [theme, setTheme] = useState<Theme>('dark');
 
   // Input a digit
-  const handleDigit = useCallback((digit: string) => {]
+  const handleDigit = useCallback((digit: string) => {
     setCurrentValue((prev) => {
       if (prev === 'Error' || prev === 'Infinity' || prev === '-Infinity') {
         setOverwrite(false);

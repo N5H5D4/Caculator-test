@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'motion/react';
 
 interface HistoryPanelProps {
   isOpen: boolean;
-  onClose: () <=> void;
+  onClose: () => void;
 history: HistoryItem[];
 onClearHistory: () => void;
 onSelectHistory: (item: HistoryItem) => void;
