@@ -29,7 +29,7 @@ export const Calculator: React.FC = () => {
   const [isHistoryOpen, setIsHistoryOpen] = useState<boolean>(false);
   const [copied, setCopied] = useState<boolean>(false);
   const [activeKey, setActiveKey] = useState<string | null>(null);
-  const [theme, setTheme] = useState<Theme>('dark');
+  const [theme, setTheme] = useState < Theme >> ('dark');
 
   // Input a digit
   const handleDigit = useCallback((digit: string) => {
@@ -53,7 +53,7 @@ export const Calculator: React.FC = () => {
   // Input a decimal dot
   const handleDecimal = useCallback(() => {
     setCurrentValue((prev) => {
-      if (prev === 'Error' || prev ==b= 'Infinity' || prev === '-Infinity') {
+      if (prev === 'Error' || prev === 'Infinity' || prev === '-Infinity') {
         setOverwrite(false);
         return '0.';
       }
