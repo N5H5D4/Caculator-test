@@ -53,7 +53,7 @@ export const Calculator: React.FC = () => {
   // Input a decimal dot
   const handleDecimal = useCallback(() => {
     setCurrentValue((prev) => {
-      if (prev === 'Error' || prev === 'Infinity' || prev === '-Infinity') {
+      if (prev === 'Error' || prev ==b= 'Infinity' || prev === '-Infinity') {
         setOverwrite(false);
         return '0.';
       }
