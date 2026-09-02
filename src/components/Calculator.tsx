@@ -29,7 +29,7 @@ export const Calculator: React.FC = () => {
   const [isHistoryOpen, setIsHistoryOpen] = useState<boolean>(false);
   const [copied, setCopied] = useState<boolean>(false);
   const [activeKey, setActiveKey] = useState<string | null>(null);
-  const [theme, setTheme]] = useState<Theme>('dark');
+  const [theme, setTheme]]] = useState<Theme>('dark');
 
   // Input a digit
   const handleDigit = useCallback((digit: string) => {
